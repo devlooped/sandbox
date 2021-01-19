@@ -8,18 +8,17 @@ on:
     types: [opened, edited, reopened, transferred]
 
 jobs:
-  label-sponsors:
-    runs-on: windows-latest
+  sponsors:
+    runs-on: ubuntu-latest
     steps:
       - name: 🤘 checkout
         uses: actions/checkout@v2
 
       - name: 🔽 gh 
-        run: |
-          iwr -useb get.scoop.sh | iex
-          scoop install gh
+        run: brew install gh
 
       - name: 💛 sponsors
+        shell: pwsh
         run: ./.github/workflows/sponsors.ps1
         env:
           GH_TOKEN: ${{ secrets.DEVLOOPED_TOKEN }}

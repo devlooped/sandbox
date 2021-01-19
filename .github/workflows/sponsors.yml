@@ -11,6 +11,9 @@ jobs:
   label-sponsors:
     runs-on: windows-latest
     steps:
+      - name: 🤘 checkout
+        uses: actions/checkout@v2
+
       - name: 🔽 gh 
         run: |
           iwr -useb get.scoop.sh | iex

@@ -9,16 +9,17 @@ on:
 
 jobs:
   sponsors:
-    runs-on: ubuntu-20.04
+    runs-on: windows-latest
     steps:
       - name: 🤘 checkout
         uses: actions/checkout@v2
 
       - name: 🔽 gh 
-        run: brew install gh
+        run: |
+          iwr -useb get.scoop.sh | iex
+          scoop install gh
 
       - name: 💛 sponsors
-        shell: pwsh
         run: ./.github/workflows/sponsors.ps1
         env:
           GH_TOKEN: ${{ secrets.DEVLOOPED_TOKEN }}

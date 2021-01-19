@@ -15,8 +15,8 @@ jobs:
   label-sponsors:
     runs-on: ubuntu-latest
     steps:
-       - name: 🔽 gh 
-         run: |
+      - name: 🔽 gh 
+        run: |
           iwr -useb get.scoop.sh | iex
           scoop install gh
 

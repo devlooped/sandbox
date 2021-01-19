@@ -1,13 +1,26 @@
+# Runs on new issues/PRs and applies sponsor labels
+
 name: sponsors
 on:
   pull_request:
-    types: [opened]
+    types: [opened, synchronize, reopened]
   issues:
-    types: [opened]
+    types: [opened, edited, reopened, transferred]
+
+defaults:
+  run:
+    shell: pwsh
+
 jobs:
-  build:
+  label-sponsors:
     runs-on: ubuntu-latest
     steps:
-      - uses: kzu/is-sponsor-label-action@v2
+       - name: 🔽 gh 
+         run: |
+          iwr -useb get.scoop.sh | iex
+          scoop install gh
+
+      - name: 💛 sponsors
+        run: ./.github/workflows/sponsors.ps1
         env:
-          GITHUB_TOKEN: ${{ secrets.KZU_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.DEVLOOPED_TOKEN }}

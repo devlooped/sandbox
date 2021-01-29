@@ -32,14 +32,16 @@ jobs:
       - name: 🖉 release
         shell: pwsh
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           $id = iwr "$env:GITHUB_API_URL/repos/$env:GITHUB_REPOSITORY/releases/tags/$env:CURRENT_TAG" | 
             select -ExpandProperty Content | 
             ConvertFrom-Json | 
             select -ExpandProperty id
-          $notes = (Get-Content .\changelog.md) -join '\n'
-          $headers = @{ 'Accept'='application/vnd.github.v3+json;charset=utf-8'; 'Authorization' = "bearer $env:GH_TOKEN" }
+          $notes = (Get-Content .\changelog.md | where { !($_ -like '\*') }) -join '\n'
+          $headers = @{ 'Accept'='application/vnd.github.v3+json;charset=utf-8'; 'Authorization' = "bearer $env:GITHUB_TOKEN" }
           $body = '{ "body":"' + $notes + '" }'
+
+          $body | ConvertFrom-Json
 
           iwr -Body $body "$env:GITHUB_API_URL/repos/$env:GITHUB_REPOSITORY/releases/$id" -Method PATCH -Headers $headers

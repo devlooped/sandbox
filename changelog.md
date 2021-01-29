@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.0.5](https://github.com/devlooped/sandbox/tree/v1.0.5) (2021-01-29)
+
+[Full Changelog](https://github.com/devlooped/sandbox/compare/v1.0.1...v1.0.5)
+
+**Fixed bugs:**
+
+- Escaping of issue \# causes issue in body of changelog [\#11](https://github.com/devlooped/sandbox/issues/11)
+- When pushing new release notes, render JSON to ensure correctness [\#10](https://github.com/devlooped/sandbox/issues/10)
+
 ## [v1.0.1](https://github.com/devlooped/sandbox/tree/v1.0.1) (2021-01-29)
 
 [Full Changelog](https://github.com/devlooped/sandbox/compare/v1.0.0...v1.0.1)

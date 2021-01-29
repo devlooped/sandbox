@@ -42,6 +42,7 @@ jobs:
           $headers = @{ 'Accept'='application/vnd.github.v3+json;charset=utf-8'; 'Authorization' = "bearer $env:GITHUB_TOKEN" }
           $body = '{ "body":"' + $notes + '" }'
 
-          $body | ConvertFrom-Json
+          # ensure we can convert to json
+          $body | ConvertFrom-Json | ConvertTo-Json
 
           iwr -Body $body "$env:GITHUB_API_URL/repos/$env:GITHUB_REPOSITORY/releases/$id" -Method PATCH -Headers $headers

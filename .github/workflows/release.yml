@@ -4,7 +4,7 @@ on:
     types: [created]
 
 jobs:
-  sponsors:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: 🤘 checkout
@@ -43,8 +43,3 @@ jobs:
           $body = '{ "body":"' + $notes + '" }'
 
           iwr -Body $body "$env:GITHUB_API_URL/repos/$env:GITHUB_REPOSITORY/releases/$id" -Method PATCH -Headers $headers
-
-      - name: 💛 sponsors
-        run: ./.github/workflows/sponsors.ps1
-        env:
-          GH_TOKEN: ${{ secrets.DEVLOOPED_TOKEN }}

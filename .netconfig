@@ -1,4 +1,5 @@
 [file ".editorconfig"]
 	url = https://github.com/devlooped/oss/blob/main/.editorconfig
 	etag = 985aa022503959d35b03c870f07ae604cead7580d260775235ef6665aa9a6cbe
+	sha = devlooped/oss@31b69be5f27a75f7042101c911a1cddb4d4ae256
 	weak

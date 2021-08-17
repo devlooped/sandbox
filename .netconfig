@@ -94,8 +94,8 @@
 	weak
 [file "assets/css/style.scss"]
 	url = https://github.com/devlooped/oss/blob/main/assets/css/style.scss
-	sha = b5583942b012f42f5ac2d06200427070cc18c250
-	etag = 2c86a074a6c8c2f6af806908a57215439fad563830b4af8fbed1a3aabaede0cf
+	sha = 9db26e2710b084d219d6355339d822f159bf5780
+	etag = f710d8919abfd5a8d00050b74ba7d0bb05c6d02e40842a3012eb96555c208504
 	weak
 [file "code-of-conduct.md"]
 	url = https://github.com/devlooped/oss/blob/main/code-of-conduct.md
@@ -119,8 +119,8 @@
 	weak
 [file "src/Directory.Build.targets"]
 	url = https://github.com/devlooped/oss/blob/main/src/Directory.Build.targets
-	sha = 55c0b32601e94e1eed35028a0cad510c6bcbb265
-	etag = 874f20853c983e6440ed67bb571d94927f9fb4cd4438585b07df7b420c664609
+	sha = fde1f6f17926f429a52e64de5ec355bb643e25bc
+	etag = 126357bbdcfd2ee087986bd27f1817926f6585fba7eda4c9acb36975474fd1b7
 	weak
 [file "src/kzu.snk"]
 	url = https://github.com/devlooped/oss/blob/main/src/kzu.snk

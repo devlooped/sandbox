@@ -5,6 +5,9 @@ jobs:
   sponsor:
     runs-on: ubuntu-latest
     steps:
+      - name: 🤘 checkout
+        uses: actions/checkout@v2
+
       - name: ❤️ sponsor 
         uses: devlooped/actions-sponsor@main
         with:

@@ -1,5 +1,9 @@
 name: sponsor ❤️
-on: [issues, pull_request]
+on: 
+  issues:
+    types: [opened, edited, reopened]
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
 
 jobs:
   sponsor:

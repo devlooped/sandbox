@@ -8,4 +8,5 @@ jobs:
       - name: ❤️ sponsor 
         uses: devlooped/actions-sponsor@v1
         with:
+          sponsorable: ${{ env.GITHUB_REPOSITORY_OWNER }}
           token: ${{ secrets.GITHUB_TOKEN }}

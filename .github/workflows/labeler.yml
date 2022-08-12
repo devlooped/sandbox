@@ -3,7 +3,7 @@ on: [issues, pull_request]
 
 jobs:
   sponsor:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: ❤️ sponsor 
         uses: devlooped/actions-sponsor@main

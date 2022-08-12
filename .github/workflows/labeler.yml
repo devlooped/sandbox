@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ❤️ sponsor 
-        uses: devlooped/actions-sponsor@v1
+        uses: devlooped/actions-sponsor@main
         with:
           token: ${{ secrets.GH_TOKEN }}

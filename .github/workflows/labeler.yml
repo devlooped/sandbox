@@ -1,0 +1,11 @@
+name: sponsor ❤️
+on: [issues, pull_request]
+
+jobs:
+  sponsor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ❤️ sponsor 
+        uses: devlooped/actions-sponsor@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}

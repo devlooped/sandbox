@@ -89,8 +89,8 @@
 	weak
 [file "src/Directory.Build.props"]
 	url = https://github.com/devlooped/oss/blob/main/src/Directory.Build.props
-	sha = b76de49afb376aa48eb172963ed70663b59b31d3
-	etag = c8b56f3860cc7ccb8773b7bd6189f5c7a6e3a2c27e9104c1ee201fbdc5af9873
+	sha = 2fff747a9673b499c99f2da183cdd5263fdc9333
+	etag = 0fccddf04f282fe98122ab2610dc2972c205a521254559bf013655c6271b0017
 	weak
 [file "src/Directory.Build.targets"]
 	url = https://github.com/devlooped/oss/blob/main/src/Directory.Build.targets
@@ -174,4 +174,14 @@
 	url = https://github.com/devlooped/.github/blob/main/sponsorlinkr.md
 	sha = a501ccfa743a3d152f6ab06377f71ab22ef4ed9a
 	etag = efe72da5946abeddf63d0a3063da6ff9c2bc5d13a292ec24ddc2c2e40e0d283f
+	weak
+[file "src/nuget.config"]
+	url = https://github.com/devlooped/oss/blob/main/src/nuget.config
+	sha = 032439dbf180fca0539a5bd3a019f18ab3484b76
+	etag = da7c0104131bd474b52fc9bc9f9bda6470e24ae38d4fb9f5c4f719bc01370ab5
+	weak
+[file ".github/ISSUE_TEMPLATE/bug.md"]
+	url = https://github.com/devlooped/.github/blob/main/.github/ISSUE_TEMPLATE/bug.md
+	sha = 80e81d21c020841dfc8678f218d42ddaffad78db
+	etag = 6ab86c474f24c915681abf4dca6c5becf3a211ab09d11e290385890dadd6f97f
 	weak

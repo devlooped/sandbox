@@ -6,7 +6,7 @@ runs:
   steps:
     - name: 🔎 dotnet
       id: dotnet
-      shell: pwsh
+      shell: bash
       run: |
         VERSIONS=$(gh api /repos/${{ github.repository }}/properties/values | jq -r '.[] | select(.property_name == "DOTNET") | .value')
         echo "versions=$VERSIONS" >> $GITHUB_OUTPUT        

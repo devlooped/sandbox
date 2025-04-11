@@ -65,13 +65,17 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
+      - name: 🔎 dotnet
+        id: dotnet
+        run: |
+          VERSIONS=$(gh api /repos/${{ github.repository }}/properties/values | jq -r '.[] | select(.property_name == "DOTNET") | .value')
+          echo "versions=$VERSIONS" >> $GITHUB_OUTPUT        
+
       - name: ⚙ dotnet
+        if: steps.dotnet.outputs.versions != ''
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: |
-            6.x
-            8.x
-            9.x
+          dotnet-version: ${{ steps.dotnet.outputs.versions }}
 
       - name: 🙏 build
         run: dotnet build -m:1 -bl:build.binlog

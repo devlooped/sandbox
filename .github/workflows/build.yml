@@ -66,7 +66,7 @@ jobs:
           fetch-depth: 0
 
       - name: ⚙ dotnet
-        uses: ./.github/actions/dotnet.yml
+        uses: ./.github/actions/dotnet
 
       - name: 🙏 build
         run: dotnet build -m:1 -bl:build.binlog

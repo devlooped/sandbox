@@ -1,0 +1,29 @@
+name: is interactive?
+on: 
+  workflow_dispatch:
+
+jobs:
+  check-interactive:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: 🔎 check
+        shell: pwsh
+        run: |
+          # Access .NET types to evaluate the C# expression components
+          $userInteractive = [System.Environment]::UserInteractive
+          $isInputRedirected = [System.Console]::IsInputRedirected
+          $isOutputRedirected = [System.Console]::IsOutputRedirected
+
+          # Calculate the final expression: !Environment.UserInteractive || Console.IsInputRedirected || Console.IsOutputRedirected
+          $nonInteractive = (-not $userInteractive) -or $isInputRedirected -or $isOutputRedirected
+
+          # Return the values as a hashtable for clarity
+          @{
+              "Environment.UserInteractive" = $userInteractive
+              "Console.IsInputRedirected" = $isInputRedirected
+              "Console.IsOutputRedirected" = $isOutputRedirected
+              "Is Non-Interactive" = $nonInteractive
+          } | ConvertTo-Json

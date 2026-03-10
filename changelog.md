@@ -1,10 +1,20 @@
 # Changelog
 
+## [v1.0.6](https://github.com/devlooped/sandbox/tree/v1.0.6) (2025-04-19)
+
+[Full Changelog](https://github.com/devlooped/sandbox/compare/v1.0.5...v1.0.6)
+
+:hammer: Other:
+
+- Testing sponsor labeling [\#13](https://github.com/devlooped/sandbox/issues/13)
+- on windows?? [\#9](https://github.com/devlooped/sandbox/issues/9)
+- whatsup? [\#7](https://github.com/devlooped/sandbox/issues/7)
+
 ## [v1.0.5](https://github.com/devlooped/sandbox/tree/v1.0.5) (2021-01-29)
 
 [Full Changelog](https://github.com/devlooped/sandbox/compare/v1.0.1...v1.0.5)
 
-**Fixed bugs:**
+:bug: Fixed bugs:
 
 - Escaping of issue \# causes issue in body of changelog [\#11](https://github.com/devlooped/sandbox/issues/11)
 - When pushing new release notes, render JSON to ensure correctness [\#10](https://github.com/devlooped/sandbox/issues/10)

@@ -1,5 +1,9 @@
 # Changelog
 
+## [v2.0.4](https://github.com/devlooped/sandbox/tree/v2.0.4) (2026-03-10)
+
+[Full Changelog](https://github.com/devlooped/sandbox/compare/v2.0.3...v2.0.4)
+
 ## [v2.0.3](https://github.com/devlooped/sandbox/tree/v2.0.3) (2026-03-10)
 
 [Full Changelog](https://github.com/devlooped/sandbox/compare/v2.0.2...v2.0.3)

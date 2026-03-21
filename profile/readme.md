@@ -1,8 +1,43 @@
-Hello there! This is [@kzu](https://github.com/kzu)'s (sounds like 'kah-zu' rather than 'kzoo' 😉) organization account 
-where I publish projects I think might be useful to others and not just personal experiments. 
+Devlooped is all about accelerating your dev loop through sharper tools.
 
-This is also the organization account you can actually [sponsor](https://github.com/sponsors/devlooped) 
-to support my ongoing opensource work.
+These tools span several domains, such as testing, AI, general-purpose CLI and 
+build tools, application architecture, and more. Some are well established, others 
+niche, some large and some small. 
+
+To support us, rather than per-project licensing (which can become costly 
+or annoying to keep track of), we instead offer the Open Source Maintenance Fee, 
+which covers all current and future libraries and tools from Devlooped. 
+
+If a particular software/package does NOT include the OSMF EULA, then you're not bound by it 
+at all.
+
+<div id="osmf"></div>
+
+## Open Source Maintenance Fee
+
+Open Source Software is free, but maintaining an Open Source Project is expensive. Think about:
+
+* Triage issues
+* Keep build scripts working
+* Update software dependencies
+* Track security reports
+* Produce new releases
+* Tackle spam in the discussion forums and issue trackers
+* Maintain signing certificates
+* And many, many other chores
+
+The [Open Source Maintenance Fee](https://opensourcemaintenancefee.org/) is a simple and sensible way to pay for the time and effort they spend sustaining a project.
+
+We started using this approach to test if it can be a viable mechanism for ongoing sustainability 
+(for example [SmallSharp](https://www.nuget.org/packages/SmallSharp), 
+[Devlooped.WhatsApp](https://www.nuget.org/packages/Devlooped.WhatsApp) and others.
+
+If you're using a project with an [Open Source Maintenance Fee EULA](https://opensourcemaintenancefee.org/maintainers/eulas/)
+and you, your organization, or your project makes money, select the monthly payment tier that applies to the size of your organization. 
+If not, a personal sponsorship of your chosen amount to support @kzu's favorite activity is also welcomed!
+
+> Since the Maintenance Fee is paid via GitHub Sponsors, it automatically covers any <a href="#sponsorlink">SponsorLink</a> sponsoring 
+requirements for projects using it. 
 
 ## Stats
 
@@ -16,17 +51,18 @@ to support my ongoing opensource work.
 [![GitHub followers](https://img.shields.io/github/followers/devlooped?logo=GitHub&label=@devlooped%20followers)](https://github.com/devlooped)
 [![GitHub Org's stars](https://img.shields.io/github/stars/devlooped?logo=GitHub&label=@devlooped%20stars)](https://github.com/devlooped)
 
-Some fancy stats about my favorite hobby (coding on GitHub, of course!):
+Some fancy stats about our favorite activity (coding on GitHub, of course!):
+
 
 <p>
 <picture>
   <source
-    srcset="https://github-readme-stats.vercel.app/api?username=kzu&show_icons=true&locale=en&show=discussions_answered&theme=dark&custom_title=Kzu%20Stats%20In%20A%20Nutshell"
+    srcset="https://github-readme-stats.vercel.app/api?username=kzu&show_icons=true&locale=en&show=discussions_answered&theme=dark&custom_title=Stats%20In%20A%20Nutshell"
     media="(prefers-color-scheme: dark)" />
   <source
-    srcset="https://github-readme-stats.vercel.app/api?username=kzu&show_icons=true&locale=en&show=discussions_answered&custom_title=Kzu%20Stats%20In%20A%20Nutshell"
+    srcset="https://github-readme-stats.vercel.app/api?username=kzu&show_icons=true&locale=en&show=discussions_answered&custom_title=Stats%20In%20A%20Nutshell"
     media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=kzu&show_icons=true&locale=en&show=discussions_answered&custom_title=Kzu%20Stats%20In%20A%20Nutshell" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=kzu&show_icons=true&locale=en&show=discussions_answered&custom_title=Stats%20In%20A%20Nutshell" />
 </picture>
 </p>
 
@@ -49,7 +85,8 @@ Some fancy stats about my favorite hobby (coding on GitHub, of course!):
 I created [SponsorLink](https://www.devlooped.com/SponsorLink/) as a mechanism to remind users that they can 
 sponsor my projects if they find them useful. It also allows attribution on the dev machine of a sponsorship 
 to potentially unlock additional functionality (or just remove the reminder and thank instead!). SponsorLink 
-never issues any messages outside of IDE usage, so it will never disrupt your CI/CD workflows or CLI builds.
+never issues any messages outside of IDE or interactive CLI usage, so it will never disrupt your CI/CD workflows or 
+CLI builds.
 
 If you arrived here from an IDE and are interested in sponsoring, the (one-time) steps are:
 
